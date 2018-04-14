@@ -19,6 +19,6 @@ class Student < ActiveRecord::Base
       self.all
     else
     self.all.select{|student| student.name.downcase.include?(name.downcase)}
-  end
-end 
+    end
+  end 
 end
